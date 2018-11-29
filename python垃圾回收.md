@@ -227,7 +227,7 @@ gc模快有一个自动垃圾回收的阀值，即通过gc.get_threshold函数�
 
 *标记清除（Mark—Sweep）算法* 是一种基于追踪回收（tracing GC）技术实现的垃圾回收算法。它分为两个阶段：第一阶段是标记阶段，GC会把所有的『活动对象』打上标记，第二阶段是把那些没有标记的对象『非活动对象』进行回收。那么GC又是如何判断哪些是活动对象哪些是非活动对象的呢？
 
-![image][https://sutune.oss-cn-shenzhen.aliyuncs.com/python/GC/mark-sweep.svg]
+![image](https://sutune.oss-cn-shenzhen.aliyuncs.com/python/GC/mark-sweep.svg)
 
 对象之间通过引用（指针）连在一起，构成一个有向图，对象构成这个有向图的节点，而引用关系构成这个有向图的边。
 
